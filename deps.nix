@@ -1,0 +1,45 @@
+{pkgs}:
+with pkgs; [
+  vulkan-loader
+  makeWrapper
+  mesa.drivers
+  mesa
+  pkg-config
+  bluez
+  ffmpeg
+  libao
+  libGLU
+  glib
+  glib-networking
+  gettext
+  xorg.libpthreadstubs
+  xorg.libXrandr
+  xorg.libXext
+  xorg.libX11
+  xorg.libSM
+  readline
+  openal
+  libevdev
+  xorg.libXdmcp
+  portaudio
+  libusb1
+  libpulseaudio
+  udev
+  gnumake
+  gtk2
+  gtk3
+  gdk-pixbuf
+  soundtouch
+  miniupnpc
+  mbedtls_2
+  curl
+  lzo
+  sfml
+  enet
+  xdg-utils
+  hidapi
+  webkitgtk
+  rustc
+  cargo
+  alsaLib
+]

@@ -148,7 +148,7 @@ if(wxWidgets_FOUND)
 		set(RUST_FEATURES "playback")
 	endif()
 
-	corrosion_import_crate(MANIFEST_PATH ${CMAKE_SOURCE_DIR}/Externals/SlippiRustExtensions/Cargo.toml ${RUST_FEATURES})
+	corrosion_import_crate(MANIFEST_PATH ${CMAKE_SOURCE_DIR}/Externals/SlippiRustExtensions/Cargo.toml ${RUST_FEATURES} FLAGS --offline)
 	target_link_libraries("${DOLPHIN_EXE}" PUBLIC slippi_rust_extensions)
 
 	if(APPLE)

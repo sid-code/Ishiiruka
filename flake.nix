@@ -30,5 +30,13 @@
       netplay = slippi-netplay;
       playback = slippi-playback;
     });
+
+    devShells = forAllSystems (system: pkgs: {
+      default = pkgs.mkShell {
+        nativeBuildInputs =
+          (pkgs.callPackage ./deps.nix {})
+          ++ (with pkgs; [pkg-config cmake wrapGAppsHook]);
+      };
+    });
   };
 }
